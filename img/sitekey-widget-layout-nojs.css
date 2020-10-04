@@ -1,0 +1,11 @@
+.skw-js-disabled-container{color:#333;font:62.5%/1.5 Verdana,Arial,Helvetica,sans-serif;position:relative;font-size:11px;line-height:14px;
+						   background:transparent url('../graphic/skw-js-disabled-bg.png') 0 0 no-repeat;width:205px;height:257px;}
+.skw-js-disabled-spanish{background:transparent url('../graphic/skw-js-disabled-esp-bg.png') 0 0 no-repeat;height:394px;}
+.skw-js-disabled-container img{display:block;}
+.skw-js-disabled-container div{margin:0;padding:0;}
+.skw-js-disabled-container a{color:#36C;text-decoration:none;display:block;margin-bottom:5px;}
+.skw-js-disabled-container a:hover,.skw-js-diabled-container a:focus{color:#00F;text-decoration:underline;}
+.skw-js-disabled-container .skw-js-disabled-content{width:144px;position:absolute;top:54px;left:45px;}
+.skw-js-disabled-container .skw-js-disabled-heading{font-weight:bold;line-height:1;color:#d4001a;}
+.skw-js-disabled-container .skw-js-disabled-content div{padding-bottom:5px;}
+.skw-js-disabled-container .skw-nojs-ada-hidden{position:absolute;left:0px;top:-5000px;width:1px;height:1px;overflow:hidden;}
