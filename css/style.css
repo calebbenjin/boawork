@@ -10,7 +10,7 @@
 :root {
   /* dark shades of primary color*/
   --clr-white: #fff;
-  --clr-primary: #0052C2;
+  --clr-primary: #055164;
   --clr-secondary: #DC1431;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -188,45 +188,33 @@ header .top-head .container .right a:hover, .left a:hover {
   border-bottom: solid 2px #333;
 }
 
-.brand .container{
+header .container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1em 0;
 }
 
-.brand .logo {
-  width: 25%;
+.logo {
+  width: 20%;
 }
-.brand .input {
-  position: relative;
+.logo span{
+  color: #bd122c;
 }
-.brand .input input {
-  padding: 5px;
-  /* width: 100% */
-}
-.brand .input .fa-search {
-  background: #333;
-  color: #fff;
-  padding: 6px 8px;
-  position: absolute;
-  right: -1.4em;
-}
+
 
 .nav {
   padding: 1em 0;
 }
 
-.nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
+.nav ul li{
+  display: inline;
+  margin-left: 1rem;
   text-transform: capitalize;
 }
 .nav ul li a {
   color: #000;
-  font-size: 1.1em;
+  font-size: 1em;
   padding-bottom: 16px;
 }
 .nav ul li a:hover {
@@ -235,7 +223,7 @@ header .top-head .container .right a:hover, .left a:hover {
 
 .showcase {
   padding: 1rem 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.143), rgba(255, 255, 255, 0.246)), url(/img/landing.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.143), rgba(216, 216, 216, 0.739)), url(/img/banking-finance-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -243,42 +231,7 @@ header .top-head .container .right a:hover, .left a:hover {
 .showcase .container {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-}
-
-.showcase .form .location {
-  margin-top: 1rem;
-}
-.showcase .form .location .find{
-  background: #0073CF;
-  padding: 5px 10px;
-  display: flex;
   align-items: center;
-  font-size: 0.9rem;
-}
-.showcase .form .location .find span {
-  margin-left: 2rem;
-}
-
-/* .showcase .form .location .find img {
-  width: 30px;
-  margin-right: 20px;
-} */
-
-
-.showcase .form .location .calanda img {
-  width: 25px;
-  margin-right: 20px;
-  color: #0052C2;
-}
-
-.showcase .form .location .calanda{
-  background: #0052C2;
-  padding: 5px 10px;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  font-size: 0.9rem;
 }
 
 .showcase .form {
@@ -296,7 +249,7 @@ header .top-head .container .right a:hover, .left a:hover {
   justify-content: space-between;
 }
 .showcase .form form{
-  background: #DC1431;
+  background: #28446b;
   line-height: 0.5;
 }
 .showcase .form form a {
@@ -345,7 +298,7 @@ header .top-head .container .right a:hover, .left a:hover {
 
 .showcase .content h1{
   font-weight: 550 !important;
-  font-size: 2.2em;
+  font-size: 3.5em;
   text-transform: initial;
   font-weight: bolder;
 }
@@ -364,25 +317,33 @@ header .top-head .container .right a:hover, .left a:hover {
   padding: 10px 20px;
 }
 
-.service-section {
+.service-section .container{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
 }
 
-.service-section .sec-1 {
-  background-image: url(/img/sec-1.webp);
-  background-size: cover;
-  background-position: center;
-  padding: 3rem;
-  width: 50%;
-}
 
 .service-section .sec-1 .earn {
-  background: #fff;
-  width: 23rem;
-  height: auto;
-  color: #333;
+  background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.493), rgba(29, 14, 14, 0.507)), url(/img/img3.png);
+  background-size: cover;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
+  color: #fff;
   padding: 30px;
+}
+
+.service-section .earn  {
+  display: flex;
+  align-items: flex-end;
+}
+.service-section .earn .text {
+  background: rgba(253, 253, 253, 0.781);
+  padding: 20px;
+  color: #333;
 }
 
 .service-section .sec-1 .earn h4 {
@@ -391,24 +352,35 @@ header .top-head .container .right a:hover, .left a:hover {
   font-size: 1.2rem;
 }
 
-.service-section .sec-2 {
-  background-image: url(/img/sec-2.webp);
+.service-section .sec-2 .earn {
+  background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.493), rgba(29, 14, 14, 0.507)), url(/img/img2.jpg);
   background-size: cover;
   background-position: center;
-  padding: 3rem;
-  width: 50%;
-}
-
-.service-section .sec-2 .earn {
-  background: #fff;
-  width: 23rem;
-  height: auto;
+  width: 20rem;
+  height: 20rem;
   color: #333;
   padding: 30px;
   /* font-size: 16px */
 }
 
 .service-section .sec-2 .earn h4 {
+  color: #bd122c;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+
+.service-section .sec-3 .earn {
+  background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.493), rgba(29, 14, 14, 0.507)), url(/img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
+  color: #333;
+  padding: 30px;
+  /* font-size: 16px */
+}
+
+.service-section .sec-3 .earn h4 {
   color: #bd122c;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
@@ -466,7 +438,8 @@ header .top-head .container .right a:hover, .left a:hover {
 /* Steps Sections */
 
 .steps {
-  background: #eeeeee;
+  background: var(--clr-primary);
+  color: #fff;
 }
 
 .steps .container {
@@ -496,6 +469,7 @@ header .top-head .container .right a:hover, .left a:hover {
 }
 
 /* Tips Section */
+
 .tips .section-title h2{
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -511,7 +485,9 @@ header .top-head .container .right a:hover, .left a:hover {
 .tips .tips-card {
   margin: 2rem 0;
   display: flex;
-  flex-direction: row;
+  background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.493), rgba(29, 14, 14, 0.507)), url(/img/img7.jpg);
+  background-size: cover;
+  background-position: center
 }
 
 .tips .tips-card .card {
@@ -522,6 +498,7 @@ header .top-head .container .right a:hover, .left a:hover {
   align-items: flex-end;
   justify-content: center;
   padding: 30px;
+  justify-content: space-between;
 }
 
 .tips .tips-card .card-1 {
@@ -550,7 +527,6 @@ header .top-head .container .right a:hover, .left a:hover {
 
 .tips .tips-card .card .text {
   background: #fff;
-  /* width: 18rem; */
   padding: 5px 10px;
   display: flex;
   align-items: center;
@@ -614,7 +590,7 @@ header .top-head .container .right a:hover, .left a:hover {
 
 /*  Secure section  */
 .secure {
-  background-image: url(/img/img21.jpg);
+  background-image: url(/img/img5.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -628,6 +604,7 @@ header .top-head .container .right a:hover, .left a:hover {
   width: 100%;
   padding: 20px;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .secure .container .text h3 {
   line-height: 1.4;
@@ -683,7 +660,7 @@ header .top-head .container .right a:hover, .left a:hover {
 
 /* footer */
 footer {
-  background: #00337a;
+  background: var(--clr-primary);
   color: #fff;
   text-align: center;
   font-weight: 500;
@@ -696,7 +673,6 @@ footer ul li {
 }
 footer ul li a {
   color: #fff;
-  border-right: solid 2px #fff;
   padding: 0 10px;
   font-size: 0.9rem;
 }
@@ -708,7 +684,7 @@ footer .connect {
 
 footer .socials a {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 862px) {
